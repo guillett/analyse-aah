@@ -21,7 +21,7 @@ function Index () {
             <title>Décompositions du revenu disponible en fonction du salaire net</title>
             <h1>Comprendre l'impact d'un changement de ressources sur les prestations sociales</h1>
             <p>
-              Ce site mettre en perspective l'évolution des prestations sociales en fonction des chagements de ressources et en particulier l'évolution du salaire net mensuel.
+              Ce site met en perspective l'évolution des prestations sociales en fonction de celle du <strong>salaire net mensuel</strong>.
             </p>
             <p>
               Accédez aux informations pour les cas types suivants&nbsp;:
