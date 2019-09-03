@@ -55,7 +55,7 @@ function Index () {
             lib.computeTotal(data, keys)
 
             keys.sort(lib.itemComparator)
-            setNames(keys)
+            setNames(['total'].concat(keys))
 
             var series = d3.stack().keys(keys).offset(d3.stackOffsetDiverging)(data)
 
