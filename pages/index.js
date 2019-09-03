@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import config from '../next.config.js'
 
 const layoutStyle = {
   fontFamily: 'sans-serif',
@@ -11,7 +12,7 @@ const layoutStyle = {
 
 const list = [{
   name: 'Célibataire',
-  link: 'static/full.json'
+  link: 'full.json'
 }]
 
 function Index () {
@@ -26,7 +27,7 @@ function Index () {
               Accédez aux informations pour les cas types suivants&nbsp;:
             </p>
             <ul>
-              {list.map(i => (<li key={i.link}><Link href={`/graphique?source=${i.link}`}><a>{i.name}</a></Link></li>))}
+              {list.map(i => (<li key={i.link}><Link href={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/${i.link}`}><a>{i.name}</a></Link></li>))}
             </ul>
         </div>
     );
