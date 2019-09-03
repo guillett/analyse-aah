@@ -12,7 +12,7 @@ function getProps() {
         return params
     }, {})
 
-    const props = { source: params.source || '/static/full.json' }
+    const props = { source: params.source || 'static/full.json' }
     return props
 }
 
