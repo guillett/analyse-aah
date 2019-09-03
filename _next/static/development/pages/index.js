@@ -9748,7 +9748,13 @@ function Index() {
       lineNumber: 23
     },
     __self: this
-  }, "Ce site mettre en perspective l'\xE9volution des prestations sociales en fonction des chagements de ressources et en particulier l'\xE9volution du salaire net mensuel."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Ce site met en perspective l'\xE9volution des prestations sociales en fonction de celle du ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "salaire net mensuel"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
