@@ -30890,7 +30890,7 @@ function Index() {
       var keys = _lib__WEBPACK_IMPORTED_MODULE_4___default.a.getRelevantSeries(data);
       _lib__WEBPACK_IMPORTED_MODULE_4___default.a.computeTotal(data, keys);
       keys.sort(_lib__WEBPACK_IMPORTED_MODULE_4___default.a.itemComparator);
-      setNames(keys);
+      setNames(['total'].concat(keys));
       var series = d3__WEBPACK_IMPORTED_MODULE_5__["stack"]().keys(keys).offset(d3__WEBPACK_IMPORTED_MODULE_5__["stackOffsetDiverging"])(data);
       var x = d3__WEBPACK_IMPORTED_MODULE_5__["scaleBand"]().domain(data.map(function (d) {
         return d.name;
