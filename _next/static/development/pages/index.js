@@ -30829,7 +30829,7 @@ function getProps() {
     return params;
   }, {});
   var props = {
-    source: params.source || '/static/full.json'
+    source: params.source || 'static/full.json'
   };
   return props;
 }
