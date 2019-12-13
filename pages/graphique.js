@@ -21,6 +21,8 @@ function fetchData(source) {
     .then(response => response.json())
 }
 
+const colors = d3.scaleOrdinal(d3.schemeCategory10)
+
 function Graphique () {
     const [source, setSource] = useState()
     const [payload, setPayload] = useState()
@@ -35,7 +37,6 @@ function Graphique () {
         "percent": "\u202f%"
     })
     const format = d3.format("$,d")
-    const colors = d3.scaleOrdinal(d3.schemeCategory10)
 
     var margin = {top: 10, right: 10, bottom: 20, left: 40}
     var height = 300
