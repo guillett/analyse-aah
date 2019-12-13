@@ -30840,6 +30840,8 @@ function fetchData(source) {
   });
 }
 
+var colors = d3__WEBPACK_IMPORTED_MODULE_5__["scaleOrdinal"](d3__WEBPACK_IMPORTED_MODULE_5__["schemeCategory10"]);
+
 function Graphique() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
@@ -30869,7 +30871,6 @@ function Graphique() {
     "percent": "\u202F%"
   });
   var format = d3__WEBPACK_IMPORTED_MODULE_5__["format"]("$,d");
-  var colors = d3__WEBPACK_IMPORTED_MODULE_5__["scaleOrdinal"](d3__WEBPACK_IMPORTED_MODULE_5__["schemeCategory10"]);
   var margin = {
     top: 10,
     right: 10,
@@ -30942,27 +30943,27 @@ function Graphique() {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }, "D\xE9composition du revenu disponible en fonction du salaire net"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
     id: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 116
     },
     __self: this
   }, "D\xE9composition du revenu disponible en fonction du salaire net"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     id: "legend",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 117
     },
     __self: this
   }, names.map(function (n) {
@@ -30970,7 +30971,7 @@ function Graphique() {
       key: n,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118
+        lineNumber: 119
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
@@ -30979,7 +30980,7 @@ function Graphique() {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119
+        lineNumber: 120
       },
       __self: this
     }, "\u25FC"), "\xA0", n, currentValues && currentValues[n] !== undefined && ' ' + format(currentValues[n]));
@@ -30987,13 +30988,13 @@ function Graphique() {
     id: "svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
@@ -31002,7 +31003,7 @@ function Graphique() {
     href: source,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: this
   }, "Source")));
@@ -31012,7 +31013,7 @@ function Graphique() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fgraphique&absolutePagePath=%2Fhome%2Fthomas%2Frepos%2Fmes-aides-changent%2Fpages%2Fgraphique.js ***!
   \**********************************************************************************************************************************************/
@@ -31035,5 +31036,5 @@ module.exports = dll_4cbc3223160d403191c6;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=graphique.js.map
