@@ -10,10 +10,11 @@ const layoutStyle = {
   minHeight: '800px'
 }
 
-const list = [{
-  name: 'Célibataire',
-  link: 'full.json'
-}]
+const list = [
+{ name: 'Célibataire en location à Saint-Brieuc', link: 'celibataire_locataire.json' },
+{ name: 'Célibataire en situation de handicap en location à Aubervilliers', link: 'celibataire_handicap.json' },
+{ name: 'Famille avec 3 enfants et un conjoint avec 900 € de chômage', link: 'famille_3enf_conjoint900chomage.json'}
+]
 
 function Index () {
     return (
