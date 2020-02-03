@@ -9718,8 +9718,14 @@ var layoutStyle = {
   minHeight: '800px'
 };
 var list = [{
-  name: 'Célibataire',
-  link: 'full.json'
+  name: 'Célibataire en location à Saint-Brieuc',
+  link: 'celibataire_locataire.json'
+}, {
+  name: 'Célibataire en situation de handicap en location à Aubervilliers',
+  link: 'celibataire_handicap.json'
+}, {
+  name: 'Famille avec 3 enfants et un conjoint avec 900 € de chômage',
+  link: 'famille_3enf_conjoint900chomage.json'
 }];
 
 function Index() {
@@ -9727,43 +9733,43 @@ function Index() {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, "D\xE9compositions du revenu disponible en fonction du salaire net"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, "Comprendre l'impact d'un changement de ressources sur les prestations sociales"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, "Ce site met en perspective l'\xE9volution des prestations sociales en fonction de celle du ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, "salaire net mensuel"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "Acc\xE9dez aux informations pour les cas types suivants\xA0:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, list.map(function (i) {
@@ -9771,20 +9777,20 @@ function Index() {
       key: i.link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 31
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/").concat(i.link),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 31
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 31
       },
       __self: this
     }, i.name)));
@@ -9795,7 +9801,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fthomas%2Frepos%2Fmes-aides-changent%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************/
@@ -9818,5 +9824,5 @@ module.exports = dll_4cbc3223160d403191c6;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
