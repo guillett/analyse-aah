@@ -50,10 +50,12 @@ function getRelevantSeries(data) {
     return accum;
   }, {});
   return (0, _keys.default)(values).reduce(function (ids, id) {
-    if (values[id] !== 0) {
-      ids.push(id);
-    }
-
+    var variations = ['', '_', '_demandeur', '_conjoint'];
+    variations.forEach(function (v) {
+      if (values[id + v] !== 0 && values[id + v] !== undefined) {
+        ids.push(id + v);
+      }
+    });
     return ids;
   }, []);
 } // Permet le tri les ressources pour faciliter la lecture du graphique
@@ -31013,7 +31015,7 @@ function Graphique() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fgraphique&absolutePagePath=%2Fhome%2Fthomas%2Frepos%2Fmes-aides-changent%2Fpages%2Fgraphique.js ***!
   \**********************************************************************************************************************************************/
@@ -31036,5 +31038,5 @@ module.exports = dll_4cbc3223160d403191c6;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=graphique.js.map
