@@ -59,10 +59,10 @@ function Index () {
             </div>
 
             <p>Le premier graphique met en évidence certains des problèmes actuels. À partir d'environ 1000 €, les ressources globales du couple diminuent !
-            Vous travaillez plus mais vous gagnez littéralement moins ! Cette diminution n'est compensé qu'à partir de 1 800 €.
+            Vous travaillez plus mais vous gagnez littéralement moins ! Cette diminution n'est compensée qu'à partir de 1 800 €.
             </p>
 
-            <p>L'amendement proposé par la majorité ne règle pas du tout le problème, elle le déplace ! Le premier pic n'est plus à 1 000 mais à environ 1 100 euros et celà n'est compensé qu'à partir de 2 000 € !
+            <p>L'amendement proposé par la majorité ne règle pas du tout le problème, elle le déplace ! Le premier pic n'est plus à 1 000 mais à environ 1 100 euros et cela n'est compensé qu'à partir de 2 000 € !
             </p>
 
             <h2>Ressources pour un couple dont les deux adultes sont bénéficiaires de l'AAH (l'un d'eux étant sans salaire)</h2>
