@@ -11240,7 +11240,7 @@ function Index() {
     __self: this
   }, "Ressources pour un couple dont aucun adulte n'est b\xE9n\xE9ficiaire de l'AAH"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "couple_non_beneficiaire",
-    src: "/graphique?source=/static/aah/couple_non_beneficiaire.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/couple_non_beneficiaire.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11267,7 +11267,7 @@ function Index() {
     __self: this
   }, "AVANT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "conjoint_beneficiaire_aah_avant",
-    src: "/graphique?source=/static/aah/conjoint_beneficiaire_aah_avant.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/conjoint_beneficiaire_aah_avant.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11285,7 +11285,7 @@ function Index() {
     __self: this
   }, "AMENDEMENT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "conjoint_beneficiaire_aah_apres",
-    src: "/graphique?source=/static/aah/conjoint_beneficiaire_aah_apres.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/conjoint_beneficiaire_aah_apres.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11318,7 +11318,7 @@ function Index() {
     __self: this
   }, "AVANT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "couple_beneficiaire_aah_avant",
-    src: "/graphique?source=/static/aah/couple_beneficiaire_aah_avant.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/couple_beneficiaire_aah_avant.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11336,7 +11336,7 @@ function Index() {
     __self: this
   }, "AMENDEMENT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "couple_beneficiaire_aah_apres",
-    src: "/graphique?source=/static/aah/couple_beneficiaire_aah_apres.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/couple_beneficiaire_aah_apres.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11369,7 +11369,7 @@ function Index() {
     __self: this
   }, "AVANT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "couple_beneficiaire_aah_2enf_avant",
-    src: "/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_avant.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/couple_beneficiaire_aah_2enf_avant.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
@@ -11387,7 +11387,7 @@ function Index() {
     __self: this
   }, "AMENDEMENT", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     id: "couple_beneficiaire_aah_2enf_amendement",
-    src: "/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_apres.json",
+    src: "".concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/graphique?source=").concat(_next_config_js__WEBPACK_IMPORTED_MODULE_2___default.a.assetPrefix, "/static/aah/couple_beneficiaire_aah_2enf_apres.json"),
     style: iframeStyle,
     __source: {
       fileName: _jsxFileName,
