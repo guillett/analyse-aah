@@ -3,6 +3,8 @@ import fetch from 'isomorphic-unfetch'
 import lib from '../lib'
 import * as d3 from "d3"
 
+import 'iframe-resizer/js/iframeResizer.contentWindow'
+
 function getProps() {
     const queryString = (window.document.location.search || '')
     const params = queryString.replace('?', '').split('&').reduce((params, tuple) => {

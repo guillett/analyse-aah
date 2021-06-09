@@ -1,5 +1,7 @@
+import {useEffect} from 'react'
 import Link from 'next/link'
 import config from '../next.config.js'
+import iFrameResize from 'iframe-resizer/js/iframeResizer'
 
 const layoutStyle = {
   fontFamily: 'sans-serif',
@@ -10,26 +12,67 @@ const layoutStyle = {
   minHeight: '800px'
 }
 
-const list = [
-{ name: 'Célibataire en location à Saint-Brieuc', link: 'celibataire_locataire.json' },
-{ name: 'Célibataire en situation de handicap en location à Aubervilliers', link: 'celibataire_handicap.json' },
-{ name: 'Famille avec 3 enfants et un conjoint avec 900 € de chômage', link: 'famille_3enf_conjoint900chomage.json'}
-]
-
 function Index () {
+  useEffect(() => {
+    iFrameResize({ log: false }, '#couple_non_beneficiaire')
+    iFrameResize({ log: false }, '#conjoint_beneficiaire_aah')
+    iFrameResize({ log: false }, '#conjoint_beneficiaire_aah_avant')
+    iFrameResize({ log: false }, '#conjoint_beneficiaire_aah_apres')
+    iFrameResize({ log: false }, '#couple_beneficiaire_aah_avant')
+    iFrameResize({ log: false }, '#couple_beneficiaire_aah_apres')
+    iFrameResize({ log: false }, '#couple_beneficiaire_aah_2enf_avant')
+    iFrameResize({ log: false }, '#couple_beneficiaire_aah_2enf_apres')
+  }, [])
+
+  const iframeStyle = {margin: "0 auto", width:"100%", border: "none", minHeight: "700px"}
     return (
         <div style={layoutStyle}>
-            <title>Décompositions du revenu disponible en fonction du salaire net</title>
-            <h1>Comprendre l'impact d'un changement de ressources sur les prestations sociales</h1>
-            <p>
-              Ce site met en perspective l'évolution des prestations sociales en fonction de celle du <strong>salaire net mensuel</strong>.
-            </p>
-            <p>
-              Accédez aux informations pour les cas types suivants&nbsp;:
-            </p>
-            <ul>
-              {list.map(i => (<li key={i.link}><Link href={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/${i.link}`}><a>{i.name}</a></Link></li>))}
-            </ul>
+            <title>Comprendre les enjeux autour de la déconjugalisation de l'AAH</title>
+            <h1>Comprendre les enjeux autour de la déconjugalisation de l'AAH</h1>
+
+            <p>Comprendre</p>
+            <h2>Ressources pour un couple dont aucun adulte n'est bénéficiaire de l'AAH</h2>
+            <iframe id="couple_non_beneficiaire" src="/graphique?source=/static/aah/couple_non_beneficiaire.json" style={iframeStyle}/>
+
+
+            <div style={{
+              display: 'flex'
+            }}>
+              <div style={{ width: '100%'}}>AVANT
+              <iframe id="conjoint_beneficiaire_aah_avant" src="/graphique?source=/static/aah/conjoint_beneficiaire_aah_avant.json" style={iframeStyle}/>
+              </div>
+              <div style={{ width: '100%'}}>AMENDEMENT
+              <iframe id="conjoint_beneficiaire_aah_apres" src="/graphique?source=/static/aah/conjoint_beneficiaire_aah_apres.json" style={iframeStyle}/>
+              </div>
+            </div>
+
+            <h2>Ressources pour un couple dont les deux adultes sont bénéficiaires de l'AAH (l'un d'eux étant sans salaire)</h2>
+
+
+            <div style={{
+              display: 'flex'
+            }}>
+              <div style={{ width: '100%'}}>AVANT
+              <iframe id="couple_beneficiaire_aah_avant" src="/graphique?source=/static/aah/couple_beneficiaire_aah_avant.json" style={iframeStyle}/>
+              </div>
+              <div style={{ width: '100%'}}>AMENDEMENT
+              <iframe id="couple_beneficiaire_aah_apres" src="/graphique?source=/static/aah/couple_beneficiaire_aah_apres.json" style={iframeStyle}/>
+              </div>
+            </div>
+
+            <h2>Ressources pour une famille avec 2 enfants dont les deux adultes sont bénéficiaires de l'AAH (l'un d'eux étant sans salaire)</h2>
+
+
+            <div style={{
+              display: 'flex'
+            }}>
+              <div style={{ width: '100%'}}>AVANT
+              <iframe id="couple_beneficiaire_aah_2enf_avant" src="/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_avant.json" style={iframeStyle}/>
+              </div>
+              <div style={{ width: '100%'}}>AMENDEMENT
+              <iframe id="couple_beneficiaire_aah_2enf_amendement" src="/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_apres.json" style={iframeStyle}/>
+              </div>
+            </div>
         </div>
     );
 }

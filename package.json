@@ -12,6 +12,7 @@
   "license": "AGL3",
   "dependencies": {
     "d3": "^5.11.0",
+    "iframe-resizer": "^4.3.2",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
     "react": "^16.8.6",
