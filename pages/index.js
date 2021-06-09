@@ -32,17 +32,17 @@ function Index () {
 
             <p>Comprendre</p>
             <h2>Ressources pour un couple dont aucun adulte n'est bénéficiaire de l'AAH</h2>
-            <iframe id="couple_non_beneficiaire" src="/graphique?source=/static/aah/couple_non_beneficiaire.json" style={iframeStyle}/>
+            <iframe id="couple_non_beneficiaire" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/couple_non_beneficiaire.json`} style={iframeStyle}/>
 
 
             <div style={{
               display: 'flex'
             }}>
               <div style={{ width: '100%'}}>AVANT
-              <iframe id="conjoint_beneficiaire_aah_avant" src="/graphique?source=/static/aah/conjoint_beneficiaire_aah_avant.json" style={iframeStyle}/>
+              <iframe id="conjoint_beneficiaire_aah_avant" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/conjoint_beneficiaire_aah_avant.json`} style={iframeStyle}/>
               </div>
               <div style={{ width: '100%'}}>AMENDEMENT
-              <iframe id="conjoint_beneficiaire_aah_apres" src="/graphique?source=/static/aah/conjoint_beneficiaire_aah_apres.json" style={iframeStyle}/>
+              <iframe id="conjoint_beneficiaire_aah_apres" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/conjoint_beneficiaire_aah_apres.json`} style={iframeStyle}/>
               </div>
             </div>
 
@@ -53,10 +53,10 @@ function Index () {
               display: 'flex'
             }}>
               <div style={{ width: '100%'}}>AVANT
-              <iframe id="couple_beneficiaire_aah_avant" src="/graphique?source=/static/aah/couple_beneficiaire_aah_avant.json" style={iframeStyle}/>
+              <iframe id="couple_beneficiaire_aah_avant" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/couple_beneficiaire_aah_avant.json`} style={iframeStyle}/>
               </div>
               <div style={{ width: '100%'}}>AMENDEMENT
-              <iframe id="couple_beneficiaire_aah_apres" src="/graphique?source=/static/aah/couple_beneficiaire_aah_apres.json" style={iframeStyle}/>
+              <iframe id="couple_beneficiaire_aah_apres" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/couple_beneficiaire_aah_apres.json`} style={iframeStyle}/>
               </div>
             </div>
 
@@ -67,10 +67,10 @@ function Index () {
               display: 'flex'
             }}>
               <div style={{ width: '100%'}}>AVANT
-              <iframe id="couple_beneficiaire_aah_2enf_avant" src="/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_avant.json" style={iframeStyle}/>
+              <iframe id="couple_beneficiaire_aah_2enf_avant" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/couple_beneficiaire_aah_2enf_avant.json`} style={iframeStyle}/>
               </div>
               <div style={{ width: '100%'}}>AMENDEMENT
-              <iframe id="couple_beneficiaire_aah_2enf_amendement" src="/graphique?source=/static/aah/couple_beneficiaire_aah_2enf_apres.json" style={iframeStyle}/>
+              <iframe id="couple_beneficiaire_aah_2enf_amendement" src={`${config.assetPrefix}/graphique?source=${config.assetPrefix}/static/aah/couple_beneficiaire_aah_2enf_apres.json`} style={iframeStyle}/>
               </div>
             </div>
         </div>
