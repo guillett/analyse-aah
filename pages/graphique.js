@@ -14,12 +14,15 @@ function getProps() {
         return params
     }, {})
 
-    const props = { source: params.source || 'static/full.json' }
+    const props = Object.assign({source: 'static/full.json'}, params)
     return props
 }
 
 function fetchData(source) {
-    return fetch(source)
+    const prs = getProps()
+    const url = source + "?value=" + (prs.value || 0)
+    console.log(url)
+    return fetch(url)
     .then(response => response.json())
 }
 
@@ -28,6 +31,7 @@ const colors = d3.scaleOrdinal(d3.schemeCategory10)
 function Graphique () {
     const [source, setSource] = useState()
     const [payload, setPayload] = useState()
+    const [data, setData] = useState()
     const [names, setNames] = useState([])
     const [currentValues, setCurrentValues] = useState([])
 
@@ -52,18 +56,20 @@ function Graphique () {
         .then(payload => {
             setPayload(payload)
 
-            var data = payload.data
-            lib.preprocess(data)
-            var keys = lib.getRelevantSeries(data)
-            lib.computeTotal(data, keys)
+            var rawData = payload.data
+            lib.preprocess(rawData)
+            var keys = lib.getRelevantSeries(rawData)
+            lib.computeTotal(rawData, keys)
+
+            setData(rawData)
 
             keys.sort(lib.itemComparator)
             setNames(['total'].concat(keys))
 
-            var series = d3.stack().keys(keys).offset(d3.stackOffsetDiverging)(data)
+            var series = d3.stack().keys(keys).offset(d3.stackOffsetDiverging)(rawData)
 
             var x = d3.scaleBand()
-              .domain(data.map(d => d.name))
+              .domain(rawData.map(d => d.name))
               .range([margin.left, width - margin.right])
               .padding(0.01)
 
@@ -73,7 +79,7 @@ function Graphique () {
 
             var xAxis = g => g
               .attr("transform", `translate(0,${height - margin.bottom})`)
-              .call(d3.axisBottom(x).tickValues(data.map(function(d) {
+              .call(d3.axisBottom(x).tickValues(rawData.map(function(d) {
                 var v = parseInt(d.salaire_net)
                 return v % 250 === 0 ? v : ''
               })).tickSizeOuter(0))
@@ -101,7 +107,7 @@ function Graphique () {
                 .attr("height", d => y(d[0]) - y(d[1]))
                 .attr("width", x.bandwidth())
                 .on("mouseover", function(_, index) {
-                    setCurrentValues(data[index])
+                    setCurrentValues(rawData[index])
                 })
 
             svg.append("g")
